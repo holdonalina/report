@@ -5,9 +5,9 @@ using System.Text;
 
 StringBuilder report = new StringBuilder();
 
-string report = "Daily Report\n";
-report += DateTime.Now.ToShortDateString() + "\n";
-report += "Events:\n";
+report.AppendLine("Daily Report");
+report.AppendLine(DateTime.Now.ToShortDateString());
+report.AppendLine("Events:");
 
 Console.WriteLine("Enter events (type 'done' to finish): ");
 
